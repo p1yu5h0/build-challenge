@@ -18,13 +18,17 @@
 
 #### Run ALL TESTS
 `mvn clean test`
+![img.png](images/img.png)
 
 #### Run BlockingQueue demo
 `mvn exec:java -Dexec.mainClass="com.piyush.assignment1.ProducerConsumerApp"
 `
+![img_1.png](images/img_1.png)
+![img_2.png](images/img_2.png)
 #### Run Wait/Notify demo
 `mvn exec:java -Dexec.mainClass="com.piyush.assignment1.ProducerConsumerWaitNotify" -Dexec.args="demo"
 `
+![img_3.png](images/img_3.png)
 #### Build JAR
 `mvn clean package java -cp target/assignment1-producer-consumer-1.0.0.jar com.piyush.assignment1.ProducerConsumerApp`
 
