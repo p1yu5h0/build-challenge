@@ -4,13 +4,14 @@
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
+    <groupId>com.piyush</groupId>
     <artifactId>build-challenge-parent</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <modules>
         <module>assignment1-producer-consumer</module>
+        <module>assignment2-data-analysis</module>
     </modules>
 
     <properties>

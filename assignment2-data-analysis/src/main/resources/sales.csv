@@ -1,0 +1,8 @@
+region,product,units,price
+North,Laptop,10,1000
+North,Mouse,50,20
+South,Laptop,15,950
+South,Keyboard,30,80
+East,Laptop,8,1100
+East,Mouse,60,25
+West,Keyboard,40,75
