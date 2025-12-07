@@ -6,6 +6,16 @@
 *piyush200205@gmail.com*  
 [LinkedIn](https://linkedin.com/in/p1yu5h0) | [GitHub](https://github.com/p1yu5h0)
 
+## TL, DR for evaluator
+#### Assignment 1: Producer-Consumer Pattern
+* cd assignment1-producer-consumer/
+* mvn clean test
+* mvn exec:java -Dexec.mainClass="com.piyush.assignment1.ProducerConsumerApp"
+
+#### Assignment 2: CSV Analysis
+* cd assignment2-data-analysis/
+* mvn clean test
+* mvn exec:java -Dexec.mainClass="com.piyush.assignment2.SalesApp"
 ## **Assignment 1: Producer-Consumer Pattern**
 
 | Objective | Implementation | Status |
