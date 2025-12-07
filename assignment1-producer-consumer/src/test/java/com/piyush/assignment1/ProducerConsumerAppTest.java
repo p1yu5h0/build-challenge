@@ -87,4 +87,35 @@ class ProducerConsumerAppTest {
         assertEquals(ProducerConsumerApp.Producer.POISON_PILL, queue.peek(),
                 "Queue should contain poison pill after single consumer");
     }
+
+    @Test
+    @Timeout(5)
+    void waitNotifyMechanismWorks() throws InterruptedException {
+        ProducerConsumerWaitNotify buffer = new ProducerConsumerWaitNotify(2);
+
+        Thread producer = new Thread(() -> {
+            try {
+                buffer.produce(1);
+                buffer.produce(2);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        });
+
+        Thread consumer = new Thread(() -> {
+            try {
+                buffer.consume();
+                buffer.consume();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        });
+
+        producer.start();
+        consumer.start();
+        producer.join();
+        consumer.join();
+
+        assertDoesNotThrow(() -> {});
+    }
 }

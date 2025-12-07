@@ -10,9 +10,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>assignment-core</module>
-        <module>assignment1-producer-consumer</module>
-        <module>assignment-core</module>
         <module>assignment1-producer-consumer</module>
     </modules>
 
